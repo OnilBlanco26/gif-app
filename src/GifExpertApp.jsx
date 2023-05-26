@@ -8,6 +8,7 @@ const GifExpertApp = () => {
 
     const onAddCategory = (newCategory) => {
       if(categories.includes(newCategory)) return; 
+
       setCategories([newCategory, ...categories])
     }
 
@@ -19,7 +20,7 @@ const GifExpertApp = () => {
         </h1>
         <AddCategory 
         // setCategories={setCategories} 
-        onNewCategory={onAddCategory}
+        onAddCategory={onAddCategory}
         />
 
      {
