@@ -29,7 +29,7 @@ const AddCategory = ({ onAddCategory }) => {
   );
 };
 
-AddCategory.propTypes = {
+AddCategory.propTypes = { 
   onAddCategory: PropTypes.func.isRequired
 }
 

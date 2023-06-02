@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const AddLimit = ({onAddLimit}) => {
 
@@ -16,6 +17,10 @@ const AddLimit = ({onAddLimit}) => {
     <option value="50">50</option>
   </select>
   )
+}
+
+AddLimit.propTypes = { 
+    onAddLimit: PropTypes.func.isRequired
 }
 
 export default AddLimit

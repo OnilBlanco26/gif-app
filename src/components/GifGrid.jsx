@@ -12,10 +12,10 @@ const GifGrid = ({ category, limit }) => {
     <div className="mt-8">
        
         {
-          isLoading && (<h2>Cargando...</h2>)
+          isLoading && (<h2 className="text-white text-3xl text-center">Cargando...</h2>)
         }
         <div className="flex flex-wrap items-center justify-center gap-4 bg-base-200/30 mx-4 rounded-md p-2 border-2 border-yellow-400 shadow-lg shadow-yellow-400">
-        <AnimatedText text={category} className="text-4xl text-yellow-400" />
+        <AnimatedText text={category} className="text-4xl text-yellow-400"  />
             {
                 images.map((image) => (
                   <GifCard key={image.id} {...image} />
@@ -27,7 +27,8 @@ const GifGrid = ({ category, limit }) => {
 }
 
 GifGrid.propTypes = {
-  category: PropTypes.string.isRequired
+  category: PropTypes.string.isRequired,
+  limit: PropTypes.number.isRequired
 }
 
 export default GifGrid

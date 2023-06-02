@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PropTypes from 'prop-types';
 
 const quote = {
   initial: {
@@ -50,5 +51,11 @@ const AnimatedText = ({ text, className = "" }) => {
     </div>
   );
 };
+
+
+AnimatedText.propTypes = {
+    text: PropTypes.string.isRequired,
+    className: PropTypes.string.isRequired
+  }
 
 export default AnimatedText;

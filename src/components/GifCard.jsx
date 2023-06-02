@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 
 const GifCard = ({title, url}) => {
 
@@ -13,5 +14,12 @@ const GifCard = ({title, url}) => {
     </div>
   )
 }
+
+GifCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+}
+
+
 
 export default GifCard
